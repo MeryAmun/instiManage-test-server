@@ -7,7 +7,7 @@ dotEnv.config();
 const app = express();
 
 app.use(express.json());
-app.use(express.urlencoded({limit:'30mb',extended:true}))
+app.use(express.urlencoded({ limit: "30mb", extended: true }));
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
   res.header(
@@ -27,7 +27,7 @@ app.get("/", (req, res) => {
 });
 
 let PORT = process.env.PORT;
-const host = '0.0.0.0'
+const host = "0.0.0.0";
 
 const startServer = async () => {
   try {
@@ -35,7 +35,7 @@ const startServer = async () => {
       if (PORT === null || PORT === "") {
         PORT = 7000;
       }
-      app.listen(PORT,host, () => {
+      app.listen(PORT, host, () => {
         console.log(`Listening to ${PORT}`);
       });
     });
@@ -44,6 +44,3 @@ const startServer = async () => {
   }
 };
 startServer();
-
-
-
