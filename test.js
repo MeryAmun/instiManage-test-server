@@ -90,3 +90,13 @@ export const activeData = [
         icon:HiUsers
     },
  ]
+
+//  {
+//     "exchangeNumbe":"1000",
+//     "exchanger":"Chebesi Awah",
+//     "openDate":"2023-10-10",
+//     "closeDate":"2023-11-30",
+//     "lastModifiedDate":"2023-10-29",
+//     "accountBalance":"2365.562",
+//     "status":"Active"
+// }
