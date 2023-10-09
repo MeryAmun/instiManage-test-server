@@ -40,3 +40,53 @@ export const activeData = [
         iconSmall:""
     },
 ]
+ export const sidebarData = [
+    {
+        id:1,
+        link:"/exchange",
+        title:"Exchange",
+        icon:SiFacebookgaming
+    },
+    {
+        id:2,
+        link:"/transfers",
+        title:"Transfers",
+        icon:RiArrowLeftRightFill
+    },
+    {
+        id:3,
+        link:"/clients",
+        title:"Clients",
+        icon:HiUserGroup
+    },
+    {
+        id:4,
+        link:"/",
+        title:"Home",
+        icon:IoHomeSharp
+    },
+    {
+        id:5,
+        link:"/currencies",
+        title:"Currencies",
+        icon:RiMoneyDollarCircleLine
+    },
+    {
+        id:6,
+        link:"/",
+        title:"Notes",
+        icon:ImFileText
+    },
+    {
+        id:7,
+        link:"/charts",
+        title:"Charts",
+        icon:BsFillBarChartLineFill
+    },
+    {
+        id:1,
+        link:"/users",
+        title:"Users",
+        icon:HiUsers
+    },
+ ]
