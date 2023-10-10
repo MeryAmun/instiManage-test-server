@@ -17,6 +17,7 @@ const createNewExchange = async (req, res) => {
 const updateExchange = async (req, res) => {
   const { id: _id } = req.params;
   const exchange = req.body;
+ 
   if (!mongoose.Types.ObjectId.isValid(_id))
     return res.status(404).send("no exchange with that id");
   const updatedExchange = await Exchanges.findByIdAndUpdate(
@@ -24,6 +25,7 @@ const updateExchange = async (req, res) => {
     { ...exchange, _id },
     { new: true }
   );
+  
   res
     .status(201)
     .json({ updatedExchange, msg: "Exchange Updated successfully" });
@@ -33,7 +35,6 @@ const deleteExchange = async (req, res) => {
   if (!mongoose.Types.ObjectId.isValid(id))
     return res.status(404).send("no exchange with that id");
   await Exchanges.findByIdAndRemove(id);
-
   res.status(201).json({ msg: "Exchange deleted successfully" });
 };
 

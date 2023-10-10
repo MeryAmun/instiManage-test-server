@@ -3,7 +3,7 @@ const { Schema } = mongoose;
 
 const ExchangeSchema = new Schema({
   exchangeNumber: {
-    type: String,
+    type: Number,
     required: true,
   },
   exchanger: {
